@@ -1,0 +1,234 @@
+//<МИКСИНЫ>===============================================================================================
+@import "mixins.scss";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
+//</Подключаем шрифты>=======================================================================================
+
+//<Иконочные шрифты>==========================================================================================
+
+//</Иконочные шрифты>==========================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontfamily: 'Heebo', sans-serif;
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minwidth: 320px;
+$mw: 320;
+$md1: 767;
+$md2: 900;
+$md3: 1100;
+$md4: 1300;
+//====================================================================================================
+$red: #FF6464;
+$blue: #00A8CC;
+$dark: #21243D;
+$grey: #8695A4;
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null.scss";
+body {
+	color: #000;
+	font-size: 16px;
+	height: 100%;
+	&.lock {
+		overflow: hidden;
+	}
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	min-width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	&.loaded {
+	}
+}
+main {
+	flex: 1 1 auto;
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container {
+	max-width: none;
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 100%;
+	@media (min-width: $md1+px) {
+		max-width: 767px;
+	}
+	@media (min-width: $md2+px) {
+		max-width: 856px;
+	}
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "forms.scss";
+@import "ui.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+//@import "../../js/fancybox/jquery.fancybox.scss";
+//@import "datepicker.scss";
+//@import "fontawesome.scss";
+//@import "popover.min.scss";
+//@import "baguetteBox.scss";
+//@import "pagging.scss";
+//@import "icons.scss";
+@import "popup.scss";
+@import "header.scss";
+@import "footer.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+::selection {background: #009bd8; color: #fff;}
+::-moz-selection {background: #009bd8; color: #fff;}
+::-webkit-selection {background: #009bd8; color: #fff;}
+
+// Firefox
+html, body {
+	scrollbar-color: $red #fff; // «цвет ползунка» «цвет полосы скроллбара»
+	scrollbar-width: thin;  // толщина 
+}
+
+// Остальные браузера
+// полоса прокрутки (скроллбар)
+::-webkit-scrollbar {
+	width: 10px; // ширина для вертикального скролла 
+	height: 10px; // высота для горизонтального скролла 
+	background-color: #fff;
+}
+
+// ползунок скроллбара
+::-webkit-scrollbar-thumb {
+	background-color: $red;
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	box-shadow: 0px 0px 5px 0px $red;
+}
+
+// Стрелки
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+	background: linear-gradient(120deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%),
+	linear-gradient(240deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%),
+	linear-gradient(0deg, #ffffff 30%, rgba(0, 0, 0, 0) 31%);
+	background-color: $blue;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+	background:
+		linear-gradient(300deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%),
+		linear-gradient(60deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%),
+		linear-gradient(180deg, #ffffff 30%, rgba(0, 0, 0, 0) 31%);
+	background-color: $blue;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+	background: linear-gradient(120deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%),
+	linear-gradient(240deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%),
+	linear-gradient(0deg, #ffffff 30%, rgba(0, 0, 0, 0) 31%);
+	background-color: $blue;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+	background:
+		linear-gradient(300deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%),
+		linear-gradient(60deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%),
+		linear-gradient(180deg, #ffffff 30%, rgba(0, 0, 0, 0) 31%);
+	background-color: $blue;
+}
+//====================================================================================================
+.dn{
+	display: none;
+}
+h1 {
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 40px;
+	color: $dark;
+}
+h2 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	color: $dark;
+}
+h3 {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 30px;
+	color: $dark;
+}
+h4 {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 60px;
+	color: $dark;
+}
+.text {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 23px;
+}
+.btn {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 29px;
+	background: #FF6464;
+	border-radius: 2px;
+	padding: 10px 20px;
+	color: #fff;
+	transition: 0.5s;
+
+	&:hover{
+		transition: 0.3s;
+		box-shadow: 1px 1px 10px 1px #FF6464;
+	}
+}
+@media (min-width: $md1+px) {
+	h1 {
+		font-weight: bold;
+		font-size: 44px;
+		line-height: 60px;
+		color: $dark;
+	}
+	h2 {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 44px;
+		color: $dark;
+	}
+	h3 {
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 38px;
+		color: $dark;
+	}
+	h4 {
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 60px;
+		color: $dark;
+	}
+}
+//====================================================================================================
+@import "works.scss";
+@import "detail.scss";
+//</ОСНОВНОЙ БЛОК>====================================================================================================
+

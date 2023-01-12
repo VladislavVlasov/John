@@ -1,0 +1,245 @@
+.contact {
+   color: $dark;
+
+   &__container {
+   }
+
+   &__content {
+   }
+
+   &__title {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      color: $dark;
+      margin:24px 0px 36px 0px;
+   }
+
+   &__body {
+   }
+
+   &__form {
+   }
+
+   &__contacts {
+   }
+}
+
+.form-contact {
+
+   &__row {
+   }
+
+   &__column {
+   }
+
+   &__input {
+      margin: 0px 0px 10px 0px;
+      input, textarea {
+         background: #EDF7FA;
+         border-radius: 2px;
+         width: 100%;
+         height: 50px;
+         border-top: 1px solid $blue;
+         transition: 0.5s;
+         color: $dark;
+         &:focus {
+         transition: 0.3s;
+         box-shadow: 0px 0px 4px 0px $blue;
+         }
+      }
+      textarea {
+         height: 100px;
+         margin: 0px 0px 35px 0px;
+         padding: 15px 20px;
+         color: $dark;
+      }
+   }
+
+   &__title {
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 35px;
+      color: $dark;
+   }
+
+   &__btn {
+      button {
+         width: 100%;
+         height: 50px;
+         background: $red;
+         border-radius: 2px;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 29px;
+         color: #FFFFFF;
+         margin: 0px 0px 40px 0px;
+      }
+   }
+}
+.input {
+}
+.req {
+}
+.email {
+}
+.contacts-contact {
+
+   &__text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      color: $dark;
+      margin: 0px 0px 20px 0px;
+   }
+
+   &__contacts {
+
+      &_title {
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 29px;
+      }
+
+      &_email {
+         font-weight: normal;
+         font-size: 16px;
+         line-height: 23px;
+      }
+
+      &_phone {
+         font-weight: normal;
+         font-size: 16px;
+         line-height: 23px;
+      }
+   }
+
+   &__icons {
+   }
+}
+.btn {
+
+   &__act {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 23px;
+      transition: 0.5s;
+      color: $dark;
+      &:hover {
+         transition: 0.3s;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 23px;
+         text-decoration: underline;
+         color: $red;
+      }
+   }
+}
+.footer {
+
+   &__icon {
+   }
+}
+
+
+@media (min-width:$md1+px){
+   .contact {
+margin: 0px 0px 80px 0px;
+		&__container {
+		}
+
+		&__content {
+		}
+
+		&__title {
+         font-weight: 900;
+         font-size: 44px;
+         line-height: 60px;
+		}
+
+		&__body {
+         display: flex;
+		}
+
+		&__form {
+         flex: 0 0 50%;
+		}
+
+		&__contacts {
+         margin: 30px 0px 0px 10%;
+		}
+}
+
+.form-contact {
+
+		&__row {
+		}
+
+		&__column {
+
+		}
+
+		&__input {
+         input {
+            width: 100%;
+         }
+		}
+
+		&__title {
+		}
+
+		&__btn {
+         button {
+            max-width: 200px;
+            &:hover{
+               transition: 0.3s;
+               box-shadow: 1px 1px 10px 1px #FF6464;
+            }
+         }
+      }
+}
+.input {
+}
+.req {
+}
+.email {
+}
+.contacts-contact {
+		&__text {
+         margin: 0px 0px 25px 0px;
+		}
+
+		&__contacts {
+			&_title {
+            margin: 0px 0px 5px 0px;
+			}
+
+			&_email {
+            margin: 0px 0px 5px 0px;
+			}
+
+			&_phone {
+            margin: 0px 0px 5px 0px;
+			}
+		}
+
+		&__icons {
+         display: block;
+         margin: 20px 0px 0px 0px;
+         a {
+            margin: 0px 20px 0px 0px;
+         }
+      }
+}
+.btn {
+
+		&__act {
+		}
+}
+.footer {
+
+		&__icon {
+		}
+}
+
+}

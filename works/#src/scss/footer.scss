@@ -1,0 +1,63 @@
+.footer {
+
+   &__content {
+      padding: 20px 0px 50px 0px;
+   }
+
+   &__icons {
+      display: flex;
+      justify-content: space-between;
+      max-width: 230px;
+      margin: 0 auto;
+   }
+
+   &__icon {
+   width: 30px;
+   height: 30px;
+   fill: $dark;
+   }
+
+   &__text {
+      text-align: center;
+      font-size: 14px;
+      line-height: 21px;
+      color: #21243D;
+      margin: 25px 0px 0px 0px;
+   }
+}
+
+.icon-fb {
+   transition: 0.3s;
+   &:hover {
+      transition: 0.3s;
+      fill: $red;
+   }
+}
+.icon-insta {
+   transition: 0.3s;
+   &:hover {
+      transition: 0.3s;
+      fill: $red;
+   }
+}
+.icon-tw {
+   transition: 0.3s;
+   &:hover {
+      transition: 0.3s;
+      fill: $red;
+   }
+}
+.icon-in {
+   transition: 0.3s;
+   &:hover {
+      transition: 0.3s;
+      fill: $red;
+   }
+}
+.text {
+}
+
+//====================================================================================================
+
+//====================================================================================================
+

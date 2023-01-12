@@ -1,0 +1,151 @@
+.work {
+   margin: 0px 0px 50px 0px;
+
+   &__container {
+   }
+
+   &__content {
+   }
+
+   &__title {
+      margin: 24px 0px 13px 10px;
+      &_title {
+         font-weight: bold;
+         font-size: 30px;
+         color: $dark;
+      }
+   }
+
+   &__cards {
+   }
+
+   &__card {
+      display: block;
+   }
+}
+.work-card {
+   padding: 10px 10px 10px 10px;
+   border-bottom: 1px solid #E0E0E0;
+   &_1 {
+   }
+
+   &_2 {
+   }
+
+   &_3 {
+   }
+
+   &__image {
+      img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         border-radius: 6px;
+      }
+   }
+
+   &__title {
+      margin: 17px 0 16px 0;
+      &_title {
+         font-weight: bold;
+         font-size: 24px;
+         color: $dark;
+      }
+   }
+
+   &__subtitle {
+      margin: 0px 0px 24px 0px;
+
+      &_data {
+         background: #142850;
+         border-radius: 16px;
+         color: #FFFFFF;
+         padding: 2px 12px;
+         margin: 0px 22px 0px 0px;
+         font-weight: 900;
+         font-size: 16px;
+      }
+
+      &_tema {
+         color: $grey;
+         font-weight: normal;
+         font-size: 16px;
+      }
+   }
+
+   &__text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      color: $dark;
+   }
+}
+
+
+@media (min-width:$md1+px){
+   .work {
+
+      &__container {
+      }
+
+      &__content {
+      }
+
+      &__title {
+      }
+
+      &__cards {
+      }
+
+      &__card {
+      }
+}
+.work-card {
+   &:first-child{
+      margin: 0px 0px 0px 0;
+   }
+   display: flex;
+   margin: 30px 0px 0px 0;
+   transition: 0.5s;
+   &:hover {
+      background-color: #EDF7FA;
+      border-radius: 6px;
+      transition: 0.3s;
+   }
+      &_1 {
+      }
+
+      &_2 {
+      }
+
+      &_3 {
+      }
+
+      &__image {
+         flex: 1;
+         img{
+         }
+      }
+
+      &__content {
+         flex: 2;
+         padding: 0 0 0 10px;
+      }
+
+      &__title {
+      }
+
+      &__subtitle {
+
+         &_data {
+         }
+
+         &_tema {
+         }
+      }
+
+      &__text {
+      }
+}
+
+}
